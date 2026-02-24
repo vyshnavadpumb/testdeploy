@@ -1,0 +1,11 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker
+*.log
+
+# SSH Keys (Safety)
+id_ed25519_deploy
+id_ed25519_deploy.pub
