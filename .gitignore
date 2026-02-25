@@ -5,6 +5,8 @@ Thumbs.db
 # Docker
 .docker
 *.log
+# Environment variables
+.env
 
 # SSH Keys (Safety)
 id_ed25519_deploy
