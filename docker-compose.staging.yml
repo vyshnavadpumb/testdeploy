@@ -1,0 +1,17 @@
+# Staging Environment
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80" # Staging uses 8080
+    volumes:
+      - ./html:/usr/share/nginx/html
+    restart: always
+    environment:
+      - NODE_ENV=staging
+
+networks:
+  default:
+    name: staging-network
