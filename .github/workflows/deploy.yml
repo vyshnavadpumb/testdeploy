@@ -19,6 +19,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            echo "🚀 Deployment triggered!"
-            echo "Branch: ${{ github.ref_name }}"
+            echo "Successfully connected to $(hostname)"
+            echo "Branch: ${{ github.ref_name }} has been pushed!"
+            echo "The time on the server is: $(date)"
             echo "Server: $(hostname)"
